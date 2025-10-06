@@ -2003,6 +2003,10 @@ See the [Developer Instructions](https://github.com/yt-dlp/yt-dlp/blob/master/CO
 
 yt-dlp makes the best effort to be a good command-line program, and thus should be callable from any programming language.
 
+**For integration examples in various programming languages, see the [`examples/`](examples) directory**. This includes:
+- [C# Console Application](examples/csharp-console) - Cross-platform command-line integration
+- [C# GUI Application](examples/csharp-gui) - Windows Forms application with graphical interface
+
 Your program should avoid parsing the normal stdout since they may change in future versions. Instead, they should use options such as `-J`, `--print`, `--progress-template`, `--exec` etc to create console output that you can reliably reproduce and parse.
 
 From a Python program, you can embed yt-dlp in a more powerful fashion, like this:
